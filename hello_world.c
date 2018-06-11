@@ -21,8 +21,12 @@ int main(int argc,  char** argv)
     int numOfBytes = sprintf(out, template, USERNAME);
 
     if (!numOfBytes || numOfBytes != buffer)
-        perror("sprintf error");
+        perror("sprintf error...");
 
+    ssize_t bytesWritten = write(1, out, (size_t) numOfBytes);
+
+    if (bytesWritten < 0 || bytesWritten != numOfBytes)
+        perror("write error...");
 
     free(out);
     return 0;
