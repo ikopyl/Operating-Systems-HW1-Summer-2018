@@ -20,7 +20,8 @@ int main(int argc,  char** argv)
     char* out = malloc(buffer);
     int numOfBytes = sprintf(out, template, USERNAME);
 
-    if (!numOfBytes || numOfBytes != buffer) { perror("sprintf error"); }
+    if (!numOfBytes || numOfBytes != buffer)
+        perror("sprintf error");
 
 
     free(out);
@@ -28,17 +29,18 @@ int main(int argc,  char** argv)
 }
 
 /**
- * My own implementation of strlen function
+ * My own implementation of strlen function.
+ * Using the pointer arithmetic to figure out
+ * the number of elements in the array.
  * @param array of characters
  * @return characters count
  */
 size_t mystrlen(const char* array)
 {
-    unsigned int counter = 0;
+    size_t counter = 0;
     char *p = (char *) array;
-    while (*p != '\0') {
-        counter++;
+    while (*p != '\0')
         p++;
-    }
+    counter = p - (char *) array;
     return counter;
 }
