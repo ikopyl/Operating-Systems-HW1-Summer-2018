@@ -15,12 +15,13 @@ $ make
 ```
 This would execute `gcc -I -Wall hello_world.c -o hw`.
 
-To clean the target (to delete the previously compiled build), runt the following in the project directory:
+To clean the target (to delete the previously compiled build), run the following command:
 ```bash
 $ make clean
 ```
 
 ## Run Instructions
+Execute the following in the project directory:
 ```bash
 $ ./hw
 ```
