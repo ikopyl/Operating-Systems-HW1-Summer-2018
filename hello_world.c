@@ -9,13 +9,13 @@
 #define USERNAME "Ilya Kopyl"
 
 
-unsigned int mystrlen(const char*);
+size_t mystrlen(const char*);
 
 
 int main(int argc,  char** argv)
 {
     static const char* template = "CSC 415, This program written by %s!!!\n";
-    const int buffer = mystrlen(template) - 2 + mystrlen(USERNAME);
+    const size_t buffer = mystrlen(template) - 2 + mystrlen(USERNAME);
 
     char* out = malloc(buffer);
     int numOfBytes = sprintf(out, template, USERNAME);
@@ -32,7 +32,7 @@ int main(int argc,  char** argv)
  * @param array of characters
  * @return characters count
  */
-unsigned int mystrlen(const char* array)
+size_t mystrlen(const char* array)
 {
     unsigned int counter = 0;
     char *p = (char *) array;
