@@ -9,11 +9,11 @@
  | 3. | Student Email | ikopyl@mail.sfsu.edu |
 
 ## Short description of the program
-Functionally, the program inserts the student's name into a string template, and then prints that string to the standard output (stdout).
+Functionally, the program inserts the student's name into a string template, and then prints that string to the standard output.
 
-To achieve this, I used the system call `write` to output a given string to a console, and a function sprintf to format the string (primarily to insert a name to the specified string template).
+To achieve this, I used the system call `write()` to output a given string to a console, and a function `sprintf()` to format the string (primarily to insert a name to the specified string template).
 
-Other things that I used in this project: since I didn't want to have the length of the char array `out` (that would store the formatted string) to be arbitrarily defined, I implemented a fuction `mystrlen` that counts the number of characters in a given char array. I used that function to dynamically determine the size of the array `out`. While implementing that function I allowed myself to leverage some pointers arithmetic to count the number of elements in the array.
+Other things that I used in this project: since I didn't want to have the length of the char array `out` (that would store the formatted string) to be arbitrarily defined, I implemented a fuction `mystrlen()` that counts the number of characters in a given char array. I used that function to dynamically determine the size of the array `out`. While implementing that function I allowed myself to leverage some pointers arithmetic to count the number of elements in the array.
 
 
 ## Building Instructions
