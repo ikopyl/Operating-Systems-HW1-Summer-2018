@@ -1,9 +1,12 @@
 # csc415-p1
 
 ## Student's info:
- 1. Student Name  : Ilya Kopyl
- 2. Student ID    : 917921711
- 3. Student Email : ikopyl@mail.sfsu.edu
+ 
+ ||||
+ | ------------- |-------------| -----|
+ | 1. | Student's Name | Ilya Kopyl |
+ | 2. | Student ID | 917921711 |
+ | 3. | Student Email | ikopyl@mail.sfsu.edu |
 
 ## Building Instructions
 Run the following in the project directory:
