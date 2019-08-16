@@ -5,8 +5,6 @@
  ||||
  | ------------- |-------------| -----|
  | 1. | Student's Name | Ilya Kopyl |
- | 2. | Student ID | 917921711 |
- | 3. | Student Email | ikopyl@mail.sfsu.edu |
 
 ## Short description of the program
 Functionally, the program inserts the student's name into a string template, and then prints that string to the standard output.
